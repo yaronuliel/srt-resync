@@ -1,0 +1,15 @@
+{
+    "name": "yaronuliel/srt-resync",
+    "description": "Utility for re-syncing a .srt subtitle file Edit",
+    "type": "cli",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaron Uliel",
+            "email": "yaron@techmarketing.co.il"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
