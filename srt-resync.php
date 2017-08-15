@@ -1,7 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-require_once './functions.php';
+require_once './vendor/autoload.php';
+
+function help() {
+	echo 'Usage: srt-sync.php [START_TIME] < input.srt > output.srt';
+	echo "\n";
+	exit;
+}
 
 if(php_sapi_name() == 'cli') {
 
@@ -14,9 +20,7 @@ if(php_sapi_name() == 'cli') {
 
 	$start = (float) $_SERVER['argv'][1];
 
-	if ( ! is_numeric( $start ) ) {
-		help();
-	}
-
-	convertFile($fh, $start);
+	$conv = new SrtResync($start);
+	$conv->convertFile($fh);
+	echo $conv;
 }

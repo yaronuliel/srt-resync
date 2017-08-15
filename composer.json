@@ -9,6 +9,11 @@
             "email": "yaron@techmarketing.co.il"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "" : "./"
+        }
+    },
     "require-dev": {
         "phpunit/phpunit": "^5.7"
     }
