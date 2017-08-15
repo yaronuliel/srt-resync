@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/yaronuliel/srt-resync.svg?branch=master)](https://travis-ci.org/yaronuliel/srt-resync)
+
+
 # SRT Subtitles file resync
 
 This utility resyncs a .srt subtitle file to start at a given time
